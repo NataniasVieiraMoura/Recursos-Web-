@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Formulário</title>
+    <style>
+        *{
+            border: 1px solid black;
+            margin: 0.5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <H2>Formulário de cadastro de usuários</H2>
+    <!--action é para onde esse formulário vai enviar esses dados-->
+    <form action="processar.php">
+        Login<br>
+        <!--name serve para captuar os dados digitados-->
+        <input type="text" name="login"><br>
+        Senha <br>
+        <input type="password" name="senha"><br>
+        <input type="button" value="Logar"> 
+    </form>
+    <!--Tela de cadastro:-->
+    <h2>Formulário de cadastre-se</h2>
+    <form action="">
+        Login:<br>
+        <input type="text" name="nome">
+        Sexo:<br>
+        <input type="radio" name="sexo" value="M">Masculino<br>
+        <input type="radio" name="sexo" value="F">Feminino<br>
+        Interreses:<br>
+        <input type="checkbox" name="interreses" value="futbol"> Futebol<br>
+        <input type="checkbox" name="interreses" value="moda"> Moda<br>
+        <input type="checkbox" name="interreses" value="lifestyle"> LifeStyle<br>
+        <input type="checkbox" name="interreses" value="economia"> Economia<br>
+        <input type="checkbox" name="interreses" value="politica"> Política<br>
+        Estado:<br>
+        <select name="estado" id="estado">
+            <option value="sp">São Paulo</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="pi">Piauí</option>
+            <option value="se">Sergipe</option>
+            <option value="to">Tocantins</option>
+            <option value="rs">Rio Grande do Sul</option>
+        </select>
+        Observações:<br>
+        <textarea name="observacoes" id="observacoes" cols="120%" rows="10"
+            style="font-size:20px"></textarea><br> 
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
