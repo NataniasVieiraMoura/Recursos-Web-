@@ -1,0 +1,103 @@
+/*Justify-content*/
+@media screen and (max-width: 200px){
+    .container-pai{
+        background-color: rgb(173, 202, 57);
+        display: flex;
+        /*flex-flow determina a forma dos elementos linha(row) ou coluna(column) e wrap para quebrar a linha caso a tela diminua*/
+        flex-flow: row wrap;
+        /*Alinhamento horizontalmente em relação ao container pai: Justify-content*/
+        /*Recebe os valores: center, flex-start, flex-end*/
+        justify-content: flex-start;
+        height: 500px;
+        /*Aling-items alinha os items verticalmente em relação ao container pai. Ele fica padronizado como o valor -> stretch;*/
+        /*Recebe os valores: center, flex-start, flex-end*/
+        align-items: flex-end;
+
+    }
+    .container-pai div{
+        background-color: bisque;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 10px;
+
+    }
+}
+@media screen and (max-width:600px) and (min-width: 200px){
+    .container-pai{
+        background-color: rgb(41, 145, 57);
+        display: flex;
+        flex-flow: row wrap;
+        /*Alinhamento na HORIZONTAL em relação ao container pai: Justify-content*/
+        justify-content: center;
+        height: 500px;
+        /*Aling-items alinha os items na VERTICAL em relação ao container pai. Ele fica padronizado como o valor -> stretch;*/
+        align-items: flex-end;
+
+    }
+    .container-pai div{
+        background-color: bisque;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 10px;
+    }
+
+}
+@media screen and (max-width:900px) and (min-width:600px){
+    .container-pai{
+        background-color: blue;
+        display: flex;
+        flex-flow: row wrap;
+        /*Alinhamento horizontalmente em relação ao container pai: Justify-content*/
+        justify-content: center;
+        height: 500px;
+        /*Aling-items alinha os items verticalmente em relação ao container pai. Ele fica padronizado como o valor -> stretch;*/
+        align-items: center;
+
+    }
+    .container-pai div{
+        background-color: bisque;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:900px){
+    .container-pai{
+        background-color: rgb(97, 97, 97);
+        display: flex;
+        flex-flow: row wrap;
+        /*Alinhamento horizontalmente em relação ao container pai: Justify-content*/
+        justify-content: flex-end;
+        height: 500px;
+        /*Aling-items alinha os items verticalmente em relação ao container pai. Ele fica padronizado como o valor -> stretch;*/
+        align-items: center;
+
+    }
+    .container-pai div{
+        background-color: bisque;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 20px;
+    }
+
+}
+@media only screen and (min-width:1200px){
+    .container-pai{
+        background-color: rgb(191, 0, 255);
+        display: flex;
+        flex-flow: row wrap;
+        /*Alinhamento horizontalmente em relação ao container pai: Justify-content*/
+        justify-content: flex-end;
+        height: 500px;
+        /*Aling-items alinha os items verticalmente em relação ao container pai. Ele fica padronizado como o valor -> stretch;*/
+        align-items: flex-start;
+
+    }
+    .container-pai div{
+        background-color: bisque;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 20px;
+    }
+}

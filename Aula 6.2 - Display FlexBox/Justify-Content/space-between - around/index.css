@@ -1,0 +1,46 @@
+.container-pai{
+    background-color: blue;
+    display: flex;
+    width: 700px;
+    height: 600px;
+    flex-flow: column wrap;
+    border: 1px solid black;
+    /*Espaço entre elementos filhos*/
+    /*o valor space between separa igualmente os elementos dentro da div pai, mas os elementos dos cantos ficam grudados no elemento pai.*/
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+.container-pai div{
+    width: 200px;
+    margin: 2px;
+    text-align: center;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.container-chefe{
+    margin-top: 20px;
+    background-color: rgb(49, 49, 49);
+    height: 500px;
+    width: 650px;
+    display: flex;
+    flex-flow: row wrap;
+    /*space-around divide espaçamento igualmente também no inicio e no fim dos elementos filhos em relação ao elemento pai como em 1 e 4 desse exemplo*/
+    /*Espaços ao redor dos elementos filhos*/
+    justify-content: space-around;
+    /*Para organizar a quebra de items quando a tela reduz utilize:*/
+    /*faz os elementos não se distanciarem quando a tela reduz*/
+    align-content: flex-end;
+    /*align-content:flex-start;
+      align-content:center*/
+    /*Align-items organiza os elementos individualmente na div pai, mas align-content alinha o conjunto de elementos na div pai*/
+
+}
+.container-chefe div{
+    background-color: rgb(185, 206, 188);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin: 3px;
+}

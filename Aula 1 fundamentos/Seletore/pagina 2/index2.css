@@ -1,0 +1,23 @@
+/* "em" unidade de medidada relativa ao estilo do container pai */
+/*Com isso você padroniza os estilos para responsividade*/
+.container-txt-pai{
+    font-size: 15px;
+}
+body{
+    background-image: url("campeonato.jpg");
+    background-repeat:no-repeat;
+    /*background-position: 5% 10%;*/
+    background-attachment:scroll;/*fixo na rolagem = fixed, scroll para ficar preso na tela*/
+    /*Você pode determinar a posição da imagem na tela(porcentagem, direção horizontal e vertical)*/
+    background-position: right bottom;
+}
+/*Dá para colocar a cor e depois a imagem*/
+#textox{
+    /*Essa font é multiplicada com base no container pai, nesse caso de 15px*/
+    font-size: 2em;
+    font-weight: bold;
+    opacity: 60%;
+    font-style: oblique;
+    text-decoration: line-through green;
+    background-color: rgb(153, 172, 189); 
+}

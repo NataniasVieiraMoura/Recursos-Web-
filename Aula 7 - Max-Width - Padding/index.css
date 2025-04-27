@@ -1,0 +1,186 @@
+*{
+    /*para visualizar a disposição de tudo na tela*/
+    border: 1px solid black;
+    margin: 0.3%;
+}
+/*Propiedade: Width*/
+/*Mude a visualização para modo celular no imspecionar do navegador e veja como o elemento vermelho não está responsivo e o verde sim*/
+.container-blc0{
+    border: 3px solid red;
+    /*Não é bom para responsividade, não se adapta a outros tamanhos de tela. Veja com a margem fica estourada*/
+    width: 800px;
+}
+.container-blc1{
+    border: 3px solid green;
+    /*essa propiedade se adapata a tamanhos de tela*/
+    max-width: 800px;
+}
+/*Propiedade position -> posicionamento do elemento em relação a tela
+ Por padrão o position está estatic -> onde ele foi colocado ali ele fica*/
+.container-pai{
+    display: inline-block;
+    /*position: fixed;*/
+    background-color: rgba(0, 255, 229, 0.504);
+    width: 100%;
+    height: 400px;
+}
+.container-velho{
+    position: static;
+    width: 15%;
+    height: 100px;
+    display: inline-block;
+    background-color: rgb(255, 123, 0);
+}
+.container-semi{
+    /*Essa propiedade surge devido a relative*/
+    /*controla a sobreposição de elementos*/
+    /*Quanto maior o número, maior a sobreposição.
+    relative -> libera propiedades bottom, left, right,top*/
+    position: relative;
+    z-index: 3;
+    width: 14%;
+    height: 100px; 
+    display: inline-block;
+    background-color: rgba(0, 38, 255, 0.859);
+}
+.container-meio{
+    position: relative;
+    top: 4%;
+    right: 14%;
+    /*Esse fica abaixo do semi e sobre o semi2*/
+    z-index: 2;
+    width: 15%;
+    height: 100px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.675);
+}
+.container-semi2{
+    position: relative;
+    /*Como o valor desse é o menor ele fica sobre posto sobre quase todos*/
+    z-index: 1;
+    top: 9%;
+    right: 29%;
+    width: 15%;
+    height: 100px;
+    display: inline-block;
+    background-color: rgb(0, 255, 0);
+}
+.container-novo{
+    position: relative;
+    /*Como o novo está com z-index negativo ele fica atrás do container-pai*/
+    z-index: -1;
+    width: 15%;
+    height: 100px;
+    display: inline-block;
+    background-color: red;
+}
+.container-sub{
+    /*esse valor fixa o elemento na tela
+    Quando você rolar a tela ele ficará fixo*/
+    position: fixed;
+    /*fixed libera bottom, left, right,top*/
+    bottom: 0%;/*ao fundo*/
+    right: 0%;/*á direita*/
+    width: 15%;
+    height: 100px;
+    display: inline-block;
+    background-color: rgb(150, 255, 10);
+}
+.container-submarino{
+    /*esse valor fixa o elemento na tela
+    Quando você rolar a tela ele ficará fixo*/
+    position: absolute;
+    /*fixed libera bottom, left, right,top*/
+    /*Esses dois valores são referentes a posição inicial do elemento filho em relação ao elemento pai*/
+    bottom: 16%;/*ao fundo*/
+    right: 40%;/*á direita*/
+    width: 15%;
+    height: 80px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(208, 0, 255);
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+.container-tijolo{
+    width: 15%;
+    height: 100px;
+    background-color: black;
+    color: azure;
+    /*Esse valor faz container tijolo se arrastar até o fim e dentro do container pai seguindo a barra superior do navegador(top:0%;)*/
+    position: sticky;
+    top: 0%;
+    right: 0%;
+    
+}
+#ancora{
+    border: 2px double rgb(0, 255, 0);
+    padding: 0.08% 0.7%;
+    margin: 5% 10%;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 114, 76);
+}
+.cabeça{
+    display: inline-block;
+    width: 1009px;
+    height: 1009px;
+    background-color: rgb(255, 145, 0);
+
+}
+.ponto{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.085);
+    position: sticky;
+    top: 3%;
+    left: 0%;
+    z-index: 2;
+}
+.topesquerda{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    margin: 0%;
+    margin-top: -5.5%;
+    padding: 0%;
+    background-color: antiquewhite;
+}
+.topdireita{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    margin: 0%;
+    margin-top: -5.5%;
+    padding: 0%;
+    background-color: antiquewhite;
+}
+.baixoesquerda{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    margin: 0%;
+    margin-top: 0%;
+    padding: 0%;
+    background-color: antiquewhite;
+}
+.baixodireita{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: 500px;
+    margin: 0%;
+    margin-top: 0%;
+    padding: 0%;
+    background-color: antiquewhite;
+}
+
+

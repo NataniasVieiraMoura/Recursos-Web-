@@ -1,0 +1,38 @@
+*{
+    border: 1px solid black;
+}
+body{
+    background-color: rgb(169, 202, 203);
+}
+
+ul li{
+    display: inline-block;
+    margin: 0%;
+    
+}
+ul li a{
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: green;
+}
+ul li a:hover, .container:hover .drop-btn{
+    background-color: rgb(179, 179, 179);
+}
+li.container{
+    display: inline-block;
+}
+
+.drop-box{
+    display: none;
+    position: absolute;
+    width: 150px;
+}
+.drop-box a{
+    padding: 10px 60px;
+    background-color: rgb(202, 202, 202);
+    border: 3px double black;
+}
+.container:hover .drop-box{
+    display: block;
+}

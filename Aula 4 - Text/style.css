@@ -1,0 +1,135 @@
+/*No google fonts você pode utilizar fontes livres de direitos autorais
+Vá em google fonts
+Escolha o tipo de font
+Selecione
+Click em "get font"
+Click em "<> get embed code"
+Selecione "@import"
+Selecione no texto gerado a linha de importa ção semelhante a essa logo abaixo:*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    background-color: rgb(172, 165, 79);
+}
+.barra-sup{
+    display: flex;
+    gap: 30%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+body header ul li a{
+    background-color: #8f6363;
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: capitalize;
+}
+#logo{
+    text-align: center;
+    text-decoration: overline dashed 5px yellow;
+}
+
+.banner-container .lista li #desc1{
+    text-decoration:line-through red;
+    text-align: justify;
+    /*a direção do texto fica da direita para a esquerda*/
+    direction:rtl;
+    /*Inverte a direção da escrita do texto para a direita*/
+    unicode-bidi:bidi-override;
+    /*Muda a formatação do texto*/
+    text-transform: uppercase;
+    /*font importada pela api do google*/
+    font-family: "Caveat";
+    /*espessura da fonte*/
+    font-weight: 800;
+    
+}
+.banner-container .lista li #desc2{
+    /*Identação*/
+    text-indent:50px;
+    /*trasforma o texto em maiúsculas,minúsculas, etc*/
+    text-transform:capitalize;
+    /*espaçamento emtre letras*/
+    letter-spacing:5px;
+    font-family:monospace;
+}
+.banner-container .lista li #desc3{
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    font-style:italic;
+    /*espaçamento entre palavras*/
+    word-spacing: 10px;
+}
+.banner-container .lista li #desc4{
+    font-family: "Dancing Script", serif;
+}
+.container-butões{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8%;
+    
+}
+/*especifique a tag: no caso um link a com classe .botão1*/
+a.botão1{
+    background: rgb(168, 62, 255);
+    text-decoration: none;
+    border: 4px solid rgb(204, 146, 255);
+    padding: 1%;
+    color: rgb(225, 217, 233);
+    border-radius: 4px;
+    font-size: 18px;
+    /*tempo para o evento começar*/
+    transition: 0.3s;
+}
+a.botão1:hover{
+    background: rgb(236, 179, 255);
+    text-decoration: none;
+    border: 4px solid rgb(202, 12, 255);
+    padding: 1.1%;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+a.botão2{
+    text-decoration:none;
+    border: 5px double #000;
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    text-align:center;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+a.botão2:hover{
+    border: 5px double #fff;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    text-align:center;
+    font-size: 18px;
+
+}
+
+.botão3{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #8f6363;
+    padding: 1%;
+    cursor: help;
+}
+.botão3:hover{
+    font-weight: 600;
+    font-size: larger;
+    text-decoration: underline;
+}

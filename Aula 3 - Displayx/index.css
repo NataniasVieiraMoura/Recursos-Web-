@@ -1,0 +1,235 @@
+body{
+    background-color: rgb(217, 255, 196);
+}
+.navbar{
+    display:flex;
+    gap: 5%;
+    background-color: rgb(255, 255, 206);
+    border-radius: 8px;
+}
+.logo{
+    text-align: center;
+    /*borda de cima*/
+    border-top: 10px dashed black;
+    /*borda de baixo*/
+    border-bottom: 10px dotted blue;
+    /*borda esquerda*/
+    border-left: 10px double green;
+    /*borda da direita*/
+    border-right: 10px  groove violet;
+    /*Margin: Espaçamento fora do elemento*/
+    margin-left: 1%;/*500px*/
+    margin-right: 0%;/*500px*/
+    /*Padding: Espaçamento do conteúdo em sí*/
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    border-radius: 50px;
+    background-image: url("capesiano.jpg");
+    color: aqua;
+    /*Opacidade é transparência do conteúdo*/
+    opacity: 0.8;
+    /*edita o estilo do link do conteúdo*/
+    text-decoration: black line-through;
+}
+.nav-links{
+    background-color: aquamarine;
+    text-align: center;
+    /*display controla a disposição do container e flex faz ser ajustável com gap(espaçamento)*/
+    display:flex;
+    /*ajusta para separar igualmente os elementos*/
+    flex-wrap: wrap;
+    /*Espaçamento da separação -> gap*/
+    gap: 5%;
+    padding: 0%;
+    padding-top: 2%;
+    width: 74.5%;
+    /*Centraliza os elementos dentro do container flexivel*/
+    justify-content: center;
+    /*padding-top: 0.5%;
+    padding-right: 45%;
+    margin-top: 3%;
+    margin-bottom: 3%;*/
+    border-radius: 16px;
+}
+
+body header nav ul li a{
+    /*Decoração do link : sem*/
+    text-decoration-line: none;
+    color: rgb(74, 74, 0);
+    font-size: 20px;
+}
+
+body header nav ul li a:hover{
+    color: rgb(121, 121, 0);
+}
+
+#semuso:hover{
+    text-decoration: line-through ;
+}
+
+
+.hero{
+    /*transformar texto em maiúsculas*/
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(71, 195, 0);
+    margin-left: 35%;
+    margin-right: 35%;
+    /*borda-final-final-raio: 50px*/
+    border-end-end-radius: 50px;
+    /*border-final-começo-raio: 50px*/
+    border-end-start-radius: 50px;
+    
+}
+section.produtos h2{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(71, 195, 0);
+    margin-left: 35%;
+    margin-right: 35%;
+    /*borda-final-final-raio: 50px*/
+    border-start-start-radius: 50px;
+    /*border-final-começo-raio: 50px*/
+    border-start-end-radius: 50px;
+}
+
+.subtit{
+    /*unset é sem determinar valor*/
+    margin-top: unset;
+    /*Sublinhado: tamanho posição tipo cor*/
+    text-decoration: 4px overline double rgb(212, 202, 113);
+}
+#subcont{
+    /*Sublinhado: tamanho posição tipo cor*/
+    text-decoration: 1px overline wavy rgb(255, 250, 110);
+    margin:0;
+}
+
+section.produtos h2{
+    margin: unset;
+}
+
+.card-container{
+    background-color: aquamarine;
+    display: flex;
+    /*Faz os items quebrarem a linha: wrap*/
+    flex-wrap: wrap;
+    /*Centraliza os items: centro*/
+    justify-content: center;
+    margin-right: 0%;
+
+}
+.card{
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 16px;
+    margin: 0.5%;
+    
+}
+
+footer{
+    text-align: end;
+    color: rgba(127, 127, 127, 0.841);
+}
+
+.botoes ul{
+    display:flex;
+    gap:2%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.botoes ul li a{
+    text-decoration: none;
+    color: #636363;
+    font-size: 18px;
+    margin: 0%;
+}
+.botoes ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: aquamarine;
+    padding: 5%;
+    font-size: 20px;
+    border-radius: 16px;
+}
+
+.chassi{
+    border-radius: 18px;
+    font-size: 16px;
+    background-color: bisque;
+    padding: 0.3%;
+    
+}
+.chassi:hover{
+    border-radius: 8px;
+    background-color: rgb(255, 198, 128);
+    font-size: 18px;
+
+}
+
+#cep{
+    text-decoration: unset;
+    color: black;
+    
+}
+
+
+.btn-grad {
+    /*gradiente linear e paleta*/
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    margin: 10px;
+    padding: 5px 45px;
+    text-align: center;
+    /*organiza para ficar a primeir letra ficar maiúscula*/
+    text-transform: capitalize;
+    /*interválo para começar o evento hover do botão*/
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;     
+    /*posição e cor da sombra*/       
+    box-shadow: 0 0 20px #252525;
+    border-radius: 30px;
+    display: block;
+    
+}
+.btn-grad a{
+    font-size: 18px;
+    text-decoration: unset;
+    color: azure;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+#txtFinal{
+    background: gray;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+    font-style: oblique;
+    border-radius:32px;
+    /*largura máxima que o elemento pode crecer, se ele tiver de conter mais vai ter de crecer para baixo*/
+    max-width: 100%;
+    /*Altura do conteúdo*/
+    height:10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: unset;
+
+}
+
+#txtend{
+    margin-top: unset;
+    background-color: #26a0da;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 8px;
+}
+#txtend:hover{
+    background-color: #00abfb;
+    color: #636363;
+}        

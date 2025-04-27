@@ -1,0 +1,41 @@
+/*Flex-grow: deve ser colocado para divs filhas. Serve para uniformizar o tamanho das divs filhas no container-pai*/
+*{
+    /*borda das caixas*/
+    box-sizing:border-box;
+    border: 2px solid black;
+    margin: 0.4%;
+    font-size: 18px;
+    font-family: monospace;
+}
+@media screen and (max-width: 1550px) and (min-width:614px){
+    .container-pai{
+        background-color: rgb(191, 0, 255);
+        display: flex;
+        flex-flow: row wrap;
+        /*Alinhamento horizontalmente em relação ao container pai: Justify-content*/
+        justify-content: center;
+        height: 500px;
+        /*Aling-items alinha os items verticalmente em relação ao container pai. Ele fica padronizado como o valor -> stretch;*/
+        align-items: center;
+
+    }
+    .container-pai div{
+        flex-grow: 1;/*o valor 1 determina que essas divs terão tamanho uniforme no container-pai*/
+        background-color: bisque;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 50px 50px;
+        text-align: center;
+        border-radius: 8px;
+    }
+    div.mario{
+        background-color: rgb(243, 141, 8);
+        /*Quando você alementa individualmente o grow a div vai ficar maior que as demais*/
+        flex-grow: 50;
+        /*veja que essa div almentou em 50 unidades em relação ao tamanho das demais*/
+    }
+    div.robson{
+        background-color: gray;
+        flex: 30%;
+    }
+}

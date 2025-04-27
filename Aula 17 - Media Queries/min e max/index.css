@@ -1,0 +1,53 @@
+/*para colocar a condição na mesma sentença*/
+/*Condição de tamanho para ativar estilo, leia-se:
+    quando o tamanho da tela for entre 600px e 900px faça*/
+div.pai{
+    display: inline-block;
+    margin: 0%;
+}
+div.home{
+    display: inline-block;
+    margin: 0%;
+}
+@media screen and (max-width: 200px){
+    div.home{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(122, 145, 7);
+        border: 2px solid red;
+    }
+}
+@media screen and (max-width:600px) and (min-width: 200px){
+    div.home{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 60, 255);
+        border: 2px solid red;
+    }
+}
+@media screen and (max-width:900px) and (min-width:600px){
+    /*altere o tamanho da tela para ver o efeito acontecer*/
+    div.home{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(111, 111, 111);
+        border: 2px solid red;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:900px){
+    div.home{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 0, 242);
+        border: 2px solid red;
+    }
+}
+@media only screen and (min-width:1200px){
+    div.home{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 255, 21);
+        border: 2px solid red;
+    }   
+}

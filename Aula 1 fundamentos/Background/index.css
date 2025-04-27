@@ -1,0 +1,46 @@
+#moto{
+    background-color:rgb(38, 162, 162);
+    /*usar pixel nao adapta a diferentes tamanhos de tela*/
+    height: 200px;
+    width: 30%;
+}
+#trote{
+
+    background-color: aquamarine;
+    height: 200px;
+    width:30%;
+
+}
+#metodo{
+    background-image: url("th.jpg");
+    height: 300px;
+    width:40%;
+    background-size: cover;/*
+    background-repeat:no-repeat;
+    background-repeat:repeat-x;
+    background-repeat:repeat-y;*/
+
+}
+#metodo:hover{
+    color: rgb(161, 161, 161);
+}
+
+.mesa{
+    background-image:url("th\ \(1\).jpg");
+    background-color: rgba(91, 91, 206, 0.853);
+    /*você pode escolher uma imagem para o fundo */
+    height:340px;
+    width: 300px;
+    background-size: contain;/*para adequar a imagem as dimensões*/
+    background-repeat: no-repeat;/*controle de repetição de imagem para preencher o fundo*/
+    background-position: bottom;/*controla
+    a posição do elemento de fundo*/
+}
+.mesa:hover{
+    /*
+    position -> controla a posição do elemento de fundo(imagem)
+    background-position:top;
+
+    */
+    background-position: top;
+}

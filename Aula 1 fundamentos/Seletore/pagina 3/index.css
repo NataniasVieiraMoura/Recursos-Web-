@@ -1,0 +1,45 @@
+/*
+Css esterno
+O CSS pega uma tag ou um elemento através de um seletor ou de sua sequencia de aninhamento e estiliza*/
+
+
+/*Seletor universal *{propiedade:valor;} */
+*{
+    margin:0;
+    padding: 0;
+    background-color: rgb(133, 45, 13);
+}
+
+body{
+    background-color: antiquewhite;
+}
+#loja{
+    color:rgb(69, 90, 49);
+    text-align: center;
+    font-size: 40px;
+}
+/*Sintaxe*/
+.seletor{
+    /*propiedade:valor*/
+    color: rgb(39, 79, 0);
+    font-size: 13px;
+    text-align: end;
+
+}
+h3.texto_A{
+    font-family: monospace;
+    font-style: italic;
+    color: burlywood;
+}
+
+h3.texto_b{
+    background-color: rgb(141, 141, 251);
+}
+
+h2, h3, p{
+    font-family:cursive, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    background-color: blueviolet;
+    color: chocolate;
+}
+

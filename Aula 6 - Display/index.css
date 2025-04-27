@@ -1,0 +1,187 @@
+/*Propiedade display: controla o comportamento do layout do elemento e como ele interage com os elementos ao redor*/
+
+.form-corp{
+    border: 2px solid black;
+    display: block;
+    /*Esse estilo ocupa todo o espaço necessário na página(como um bloco)*/
+    /*padrão caso não coloque valor*/
+/*Tags que possuem essa configuração padrão:
+    h1,h2,h3,h4,h5,h6,p,div,form, header,footer, section
+*/
+}
+
+.borda{
+    color: blueviolet;
+    border: 1px solid green;
+}
+.borda-grossa{
+    border: 2px solid green;
+}
+.espaço{
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nalinha{
+    /*Faz todos os elementos com esse valor ficarem
+    na mesma linha*/
+    /*Não é possivel mudar o tamanho do elemento com esse valor*/
+    display: inline;
+}
+.sumir{
+    /*Faz sumir a tag(elemento) e etc*/
+    display: none;
+    
+}
+
+.ver:hover{
+    display: none;
+}
+.lista{
+    display: block;
+}
+.verm{
+    border: 2px solid red;
+    background-color: rgb(255, 114, 114);
+    display: inline;
+    
+}
+.azl{
+    border: 2px solid blue;
+    background-color: rgb(113, 113, 255);
+    display: inline;
+}
+.verd{
+    border: 2px solid green;
+    background-color: rgb(115, 255, 115);
+    display: inline;
+}
+.lar{
+    border: 2px solid rgb(255, 149, 0);
+    background-color: rgb(255, 192, 105);
+    display: inline;
+}
+
+
+/*display:inline-block; serve para colocar os elementos em linha e ediar seu tamanho*/
+.verm2{
+    border: 2px solid red;
+    background-color: rgb(255, 114, 114);
+    display: inline-block;
+    width: 10%;
+    height: 200px;
+    text-align:center;
+    padding-top: 1%;
+    
+}
+.azl2{
+    border: 2px solid blue;
+    background-color: rgb(113, 113, 255);
+    display: inline-block;
+    width: 10%;
+    height: 200px;
+    text-align:center;
+    padding-top: 1%;
+}
+.verd2{
+    border: 2px solid green;
+    background-color: rgb(115, 255, 115);
+    display: inline-block;
+    width: 10%;
+    height: 200px;
+    text-align:center;
+    padding-top: 1%;
+}
+.lar2{
+    border: 2px solid rgb(255, 149, 0);
+    background-color: rgb(255, 192, 105);
+    display: inline-block;
+    width: 10%;
+    height: 200px;
+    text-align:center;
+    padding-top: 1%;
+}
+.desaparecido{
+    border: 2px solid rgb(255, 149, 0);
+    background-color: rgb(255, 192, 105);
+    text-align: center;
+    display: inline-block;
+    width: 10%;
+    height: 200px;
+    padding-top: 1%;
+}
+.desaparecido:hover{
+    /*Essa propiedade deixa o elemento invisível*/
+    visibility: hidden;
+    transition: 0s;
+}
+a.botao{
+    /*Para poder manipular a posição do a,span e strong é necessário usar inline-block*/
+    display: inline-block;
+    margin-top: 10%;
+    margin-left: 50%;
+    padding: 2%;
+    background-color: bisque;
+}
+
+/*Pode criar evento hover de 
+    groove para ridge e 
+    inset para outset
+*/
+.bordtips1{
+    text-align: center;
+    width: 100px;
+    height: 100px; 
+    border: 10px groove rgb(189, 189, 189);
+    margin: 2% 10%;
+    
+}
+.bordtips1 p#t1{
+    color: rgb(0, 96, 10);
+}
+/*groove -> ridge*/
+.bordtips1 p#t2{
+    color: rgb(249, 249, 249);
+}
+.bordtips1:hover{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 96, 10);
+    border: 10px ridge rgb(175, 175, 175);
+    margin: 2% 10%;
+}
+
+.bordtips3{
+    text-align: center;
+    width: 100px;
+    height: 100px; 
+    border: 10px inset rgb(151, 151, 151);
+    margin: 2% 10%;
+}
+.bordtips3 p#t3{
+    color: rgb(0, 96, 10);
+}
+/*inset -> outset*/
+.bordtips3 p#t4{
+    color: rgb(249, 249, 249);
+}
+.bordtips3:hover{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 96, 10);
+    border: 10px outset rgb(175, 175, 175);
+    margin: 2% 10%;
+}
+
+.bordtips5{
+    text-align: center;
+    width: 100px;
+    height: 100px; 
+    border: 10px none rgb(0, 0, 0);
+    margin: 2% 10%;
+    box-shadow: 0px 0px 100px black;
+}
+

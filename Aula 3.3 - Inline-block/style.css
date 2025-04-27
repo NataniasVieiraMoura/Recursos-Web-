@@ -1,0 +1,81 @@
+/*Display padrão das tags:
+block:
+    Tags com essa configuração: 
+        <h1>,<p>,<table>
+inline:
+    Tags com essa configuração: 
+        <a>,<span>,<img>*/
+*{
+    border: 1px solid black;
+    margin: 0.5%;
+}
+body{
+    height: 3000px;
+}
+div.secao{
+    display: block;
+    background-color:black;
+    color: white;
+}
+
+
+div.bloco{
+    /*o elemento ocupa toda a largura não importa o conteúdo*/
+    display: block;
+    background-color: blue;
+}
+div.nalinha{
+    /*O elemento ocupa fica na mesma linha que o anterior*/
+    display: inline;
+    background-color: red;
+}
+div.ajustado{
+    /*o elemento ocupa apenas o espaço suficiente para comportar os elemento e fica na mesma linha*/
+    display: inline-block;
+    background-color: gray;
+}
+
+div.titulo{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: blanchedalmond;
+}
+div.container-sup{
+    height: 2000px;
+}
+div.container-sup div{
+    
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+div.container-sup div.relativo{
+    background-color: yellowgreen;
+    /*relative: ajusta a posição do elemento partindo da posição inicial que ele estava originalmente*/
+    position: relative;
+    z-index:100;
+    left: 78.5%;
+}
+div.container-sup div.absoluto{
+    background-color: violet;
+    /*O container passa a ser posicionado em relação ao contanier sup (container pai)*/
+    position: absolute;
+    left: 30%;
+}
+div.fixo{
+    /*O container fica fixo em relação a janela do navegador*/
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    /*prioridade de sobreposição entre containers: quanto maior o valor do indice mais containers essa div pode sobrepor*/
+    z-index: 200;
+}

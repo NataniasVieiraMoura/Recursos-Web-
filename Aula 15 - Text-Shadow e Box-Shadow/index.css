@@ -1,0 +1,62 @@
+/*A propidedade text-shadow cria sombra nos textos;
+    text-shadow: horizontal(px)
+                 vertical(px)
+                 blur(desfoque ou suavização da sombra)
+                 cor*/
+h1.titulo{
+    text-shadow: 800px 0px 2px green;/*direção da sobra apenas horizontal*/
+}
+h1.sub-tit{
+    text-shadow: 0px 40px 1px rgb(99, 99, 0);/*direção da sombra apenas vertical*/
+}
+h1.sub-ambar{
+    text-shadow: 20px 40px 5px blue;/*direção da sombra na vertical e horizontal*/
+}
+h1.sub-roberto{
+    text-shadow: 0px 0px 10px rgb(238, 0, 255);/*intensidade de sombra para todas as direções*/
+}
+h1.sub-capivara{
+    /*Pode haver multiplas sombras num mesmo elemento*/
+    color: white;
+    text-shadow: 
+        700px 0px 0px blueviolet,/*sombra horizontal*/
+        0px 50px 0px gray,/*sombra vertical*/
+        700px 50px 0px burlywood,/*sombra vertical mais horizontal*/
+        /*sombras em todas as direções como logo abaixo se somam: 
+            nesse caso obtem-se cinza da mistura preto-branco*/
+        0px 0px 10px rgb(0, 0, 0),/*sombra total*/
+        0px 0px 10px rgb(255, 255, 255);/*sombra total*/
+}
+/*Propiedade box-shadow -> efeito de sombra para caixas(equivante ao text-shadow)
+    Estrutura: box-shadow: horizontal(px) vertical(px) blur[suavização da somba](px) cor*/
+
+section.container-pai{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap:wrap ;
+    gap: 5%;
+    padding: 5%;
+
+}
+.container-tijolo{
+    background-color: rgb(226, 195, 255);
+    width: 20%;
+    height: 500px;
+    margin-left: 5%;
+    background-repeat:no-repeat;
+    border-radius: 10px;
+    text-align: center;
+}
+.postacard{
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.container-tijolo:hover{
+    /*propiedade transition > tempo até ativar esses estilos apartir do contato com o mouse
+     Estrutura: box-shadow: horizontal(px) vertical(px) suavidade(px) cor*/
+    /*trasintion: tempo(s) ao passar o mouse*/
+    transition: 0.5s ease-out;
+    scale: 1.1;
+    box-shadow: 10px 10px 20px gray;
+}

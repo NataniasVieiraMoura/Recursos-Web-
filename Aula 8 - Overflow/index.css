@@ -1,0 +1,85 @@
+*{
+    border: 2px solid black;
+    padding: 0.2%;
+}
+body{
+    border: 2px solid red;
+}
+section.container-pai{
+    border: 2px solid green;
+}
+div.container-filho{
+    /*Propiedade overflow determina como o conteúdo vai se comportar dentro do container que ele está. Por padrão está -> visible;*/
+    border: 2px solid purple;
+    /*overflow só funciona com delimitação de altura no elemento*/
+    max-height: 50px;
+    overflow: visible;
+}
+
+div.container-filho p{
+    background-color: bisque;
+}
+
+a{
+    background-color: aqua;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+/*Propiedade overflow determina que o container vai conter todo o conteúdo -> hidden;*/
+section.container-pai2{
+    border: 2px solid green;
+    
+}
+div.container-f2{
+    border: 2px solid purple;
+    height: 250px;
+    overflow: hidden;
+}
+
+div.container-f2 p{
+    background-color: bisque;
+}
+
+ /*Propiedade overflow -> scroll cria uma barra de rolagem para mostrar todo o conteúdo;*/
+section.container-pai3{
+    border: 2px solid green;
+    
+}
+div.container-f3{
+    border: 2px solid purple;
+    height: 250px;
+    overflow: scroll;
+}
+
+div.container-f3 p{
+    background-color: bisque;
+}
+
+ /*Propiedade overflow -> auto; ajusta os elementos automaticamente dentro do container*/
+ section.container-pai4{
+    border: 2px solid green;
+    
+}
+div.container-f4{
+    border: 2px solid purple;
+    height: 250px;
+    /*Cria barra de rolagem para consumir o conteúdo dentro do container*/
+    overflow: auto;
+    /*A largura do container ultrapassa o tamanho da tela*/
+    width: 2400px;
+}
+
+div.container-f4 p{
+    background-color: bisque;
+}
+p{
+    /*Os paragrafos ultrapassam o tamanho da tela*/
+    background-color: aquamarine;
+}
+#corpo4{
+    /*overflow-y:hidden; remove a barra de rolagem vertical*/
+    overflow-y:hidden;
+    /*overflow-x:hidden; remove a barra de rolagem horizontal*/
+    overflow-x: hidden;
+}

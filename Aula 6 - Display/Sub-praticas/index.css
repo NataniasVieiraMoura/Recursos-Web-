@@ -1,0 +1,84 @@
+*{
+    /*Use essa estrutura para ver os conteiners e seus limites*/
+    border: 1px solid gray;
+    padding: 0.5%;
+}
+.cabeça{
+    
+}
+.lateral{
+    border: 1px solid red;
+    display: flex;
+
+}
+.nav-bar{
+    display: flex;
+    padding-right: 0%;
+}
+.nav-links{
+    padding:0%;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    
+}
+ul.nav-links a li{
+    
+}
+.conteudo{
+    display: inline-block;
+    margin-left: 0px;
+
+}
+#esplicativo{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin: 0%;
+}
+.pesquisa{
+    position: absolute;
+    top: 0%;
+    right: 3.7%;
+    margin: 0%;
+}
+.container{
+    padding: 3% 0%;
+    position: relative;
+}
+.img{
+    position: absolute;
+    top: 0%;
+    right: 17.3%;
+    width: 30px;
+    height: 16px;
+}
+.filtro{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+ul.nav-links a li{
+    
+    margin: 0%; 
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-left: 5px;
+    /*Direção do texto*/
+    white-space: nowrap;   
+    text-align: left; 
+    /*propiedade de time até acionar o evento*/
+    transition: trasform 0.3s ease-in-out;
+    background-color: aquamarine;
+}
+ul.nav-links a li:hover{
+    /*propiedade de almentar o elemento ao passar o mouse*/
+    transform: scale(110%);/*1:2*/
+    background-color: aquamarine;
+}
+ul.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}

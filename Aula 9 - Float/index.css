@@ -1,0 +1,58 @@
+*{
+    border: 1px solid black;
+    padding: 1%;
+}
+.container-sup{
+    /*Com overflow auto a div pai se ajustar ao conteúdo contido automaticamente.
+    Essa propiedade ajusta o container pai a se adaptar ao conteúdo flutuante img float que está fora do container pai*/
+    overflow: auto;
+}
+img{
+    /*Essa propiedade faz o elemento flutuar em cima do elemento pai. Nesse caso o p fica livre para ficar lado a lado com a imagem*/
+    /*O valor left define a posição do elemento que vai flutuar*/
+    float: left;
+    width: 550px;
+    margin-right: 20px;
+}
+#desc{
+    margin-right: 0%;
+}
+.fora{
+    /*Remove o efeito da propiedade float sobre o elemento*/
+    /*Os elementos com essa propiedade não vão contornar o elemento flutuante img*/
+    clear: both;
+    /*Serve para que o elemento leve em conta o espaço ocupado pelo elemento flutuante*/
+}
+
+.nav-bar{
+
+}
+.nav-links{
+    background-color: black;
+    border-radius: 8px;
+}
+.nav-links li{
+    display: inline-block;
+    
+    
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 28px 20px;
+    border-radius: 8px;
+}
+.nav-links li a:hover{
+    background-color: white;
+    color: black;
+    
+}
+.bar-fin{
+    /*Insere o elemento ao final da linha dentro do container pai*/
+    /*float: inline-end;*/
+    float: right;
+}
+.nav-links li.bar-fin a:hover{
+    background-color: brown;
+    color: white;
+}

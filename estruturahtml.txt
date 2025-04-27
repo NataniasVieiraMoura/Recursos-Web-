@@ -1,0 +1,9 @@
+<header> → Cabeçalho (logo, menu, título).
+<nav> → Links de navegação.
+<main> → Conteúdo principal (somente um por página).
+<section> → Seções de conteúdo.
+<article> → Posts independentes.
+<aside> → Barra lateral com conteúdos complementares.
+<div> → Estrutura genérica.
+<footer> → Rodapé com informações finais.
+<span> → Para destacar partes pequenas de texto.

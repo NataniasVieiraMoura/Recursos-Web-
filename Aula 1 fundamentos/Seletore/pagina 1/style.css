@@ -1,0 +1,74 @@
+/*Seletor universal: estiliza todas as tags exites*/
+*{
+    margin: 0.5%;
+    padding: 0;
+    border: 1.5px solid red;
+}
+/*seletor de texto: estiliza tags genéricas*/
+h1{
+    color: blue;
+}
+h2{
+    color: red;
+}
+h3{
+    color: gray;
+}
+
+h4{
+    color: black;
+}
+h5{
+    color: green;
+}
+h6{
+    background-color: black;
+    color: white;
+}
+/*Seletor de classe: estiliza classe*/
+.caixote{
+    width: 300px;
+    height: 150px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgba(255, 93, 93, 0.23);
+    border: 5px ridge rgb(227, 123, 123);
+}
+/*Seletor de classe: estiliza classe*/
+.container-pai{
+    display: flex;
+    background: linear-gradient(45deg, rgb(181, 88, 13),rgb(67, 48, 32), rgb(246, 207, 176));
+}
+/*Seletor de ID: estiliza id*/
+#elemento1{
+    background: linear-gradient(45deg, rgb(0, 255, 0),rgb(53, 80, 53), rgb(214, 255, 214));
+    width: 300px;
+    height: 150px;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 130px;
+    text-align: center;
+    justify-items: center;
+}
+/*Seletor para filhos: estiliza qualquer tag que esteja nesse aninhamento específico*/
+#elemento1>p{
+    margin-top: 20%;
+}
+
+/*Seletor descendente: estiliza qualquer tag p que esteja nesse aninhamento*/
+body div p{
+    color: rgb(134, 88, 32);
+    background-color: rgb(191, 178, 161);
+    text-decoration: line-through red;
+    font-family: monospace;
+}
+
+/*Seletor de irmãos adjacentes: estiliza a única tag h2 que venha após uma section*/
+section+h2{
+    color: violet;
+    background-color: rgb(56, 118, 172);
+}
+/*Seletor de irmãos geral: seleciona qualquer tag p que venha logo após h1*/
+h1~p{
+    color: blue;
+    background-color: rgb(214, 128, 23);
+}

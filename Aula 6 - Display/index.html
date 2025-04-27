@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--display: block-->
+    <header class="espaço borda"></header>
+    <section class="borda-grossa">
+        <div class="form-corp espaço"></div>
+        <h1 class ="borda">Titulo para exemplo aqui</h1>
+        <h2 class ="borda">Titulo nivel 2</h2>
+        <h3 class ="borda">Titulo nivel 2</h3>
+        <h4 class ="borda">Titulo nivel 2</h4>
+        <h5 class ="borda">Titulo nivel 2</h5>
+        <h6 class ="borda">Titulo nivel 2</h6>
+        <p class="espaço borda">Paragrafo com texto</p>
+    </section>
+    <form action="" class="borda espaço">
+    </form>
+    
+    <!--display: inline
+    Tags que tem esse estilo como padrão-->
+    <a href="#" class="borda espaço">link de acesso</a>
+    <span class="borda espaço">Espan</span>
+    <strong class="borda espaço">Letra com força</strong>
+
+    <!--Aplicando inline em tags com padrão block-->
+    <h1 class="borda">Titulo para texto comun</h1>
+    <p class="borda nalinha">Esse texto é exemplificativo</p>
+    <p class="borda nalinha">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, eum beatae quos inventore nostrum molestias at possimus consequatur cum eos, dignissimos rerum accusamus! Ullam non veritatis ipsa. Laborum, expedita iusto?</p>
+    <p class="borda nalinha">Outro texto para fechar</p>
+
+    <!--Para sumir com uma tag display: none
+    Veja que a lista não aparece devido esse estilo-->
+    <ul class="sumir">
+        <li> Cadastro</li>
+        <li>Sistema</li>
+        <li>Marca de altomóvel</li>
+    </ul>
+
+    <ol type="I" class="borda ver">
+        <li>Nome</li>
+        <li>Tipo</li>
+        <li>Sexo</li>
+        <li>Idade</li>
+    </ol>
+
+    <!--Para que não sobre espaço entre os elementos na linha eles devem ser colocados exatamente um após o outro(cada tag)-->
+    <ul type="none" class="borda lista">
+        <li class="verm">Nome</li><li class="azl">Tipo</li><li class="verd">Sexo</li><li class="lar">Idade</li>
+    </ul>
+
+    <!--display:inline-block;-->
+
+    <ul type="none" class="borda" style="margin-top: 10%;">
+        <li class="verm2 box-ln">Comando</li>
+        <li class="azl2 box-ln">Contorno</li>
+        <li class="desaparecido">Maniqueista</li>
+        <li class="verd2 box-ln">Canto</li>
+        <li class="lar2 box-ln">Suave</li>
+    </ul>
+    <a href="#" class="borda espaço botao">Aqui abre</a>
+
+    <!--cria-->
+    <div class="bordtips1">
+        <p id="t1">groove</p>
+        <div>
+            <p id="t2">inset</p>
+        </div>
+    </div>
+    <div class="bordtips3">
+        <p id="t3">outset</p>
+        <div>
+            <p id="t4">inset</p>
+        </div>
+    </div>
+    <div class="bordtips5"><p id="t4">none</p></div>
+</body>
+</html>

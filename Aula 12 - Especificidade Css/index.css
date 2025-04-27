@@ -1,0 +1,56 @@
+/*Na ordem de prioridade:
+1ª style direto na tag
+2ª style direto na página html
+3ª style por um arquivo.css
+1ª id(#) 
+2ª class(.)
+3ª tag(nome da tag) 
+O estilo com os recursos de maior prioridade se sobrerá sobre os demais.
+Prioridades se somam.
+Quanto mais específico você for, maior a prioridade.
+Exemplo:
+section.container div.box-interno ul.box-links
+li#inicio a#ancora1 <- tem mais prioridade que-> section div ul li a
+*/
+
+.nav-links{
+    border-radius: 4px;
+    margin: 15px 15px;
+    padding-left: 0%;
+    border: 1px solid black;
+    display: inline-block;
+}
+ul.nav-links li.carolina#talita{
+    border: 1px solid goldenrod;
+    background-color:rgb(231, 231, 231);
+    padding: 10px 40px;
+    border-radius: 4px;
+}
+ul li:hover{
+    scale: 1.2;
+}
+ul.nav-links li.carolina#talita a{
+    text-decoration:none;
+    color: rgb(89, 134, 0);
+}
+li div.sub-container{
+    position:absolute;
+    display: none;
+    border-radius: 8px;
+    margin-left: 77%;
+    margin-top: -17%;
+}
+div.sub-container a#sub-items{
+    display: block;
+    border: 1px solid hotpink;
+    background-color: rgb(237, 217, 192);
+    width: 150px;
+    height: 25px;
+    border-radius: 8px;
+}
+div.sub-container a#sub-items:hover{
+    scale: 1.2;
+}
+ul.nav-links li.carolina#talita:hover .sub-container{
+    display: block;
+}

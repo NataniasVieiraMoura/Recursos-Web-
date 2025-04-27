@@ -1,0 +1,29 @@
+/*Display flex-box*/
+/*Elementos em linha*/
+.flex-pai{
+    display: flex;
+    /*Os elementos filhos vão ser organizados em linha*/
+    flex-direction: row;
+    background-color: rgb(31, 15, 255);
+}
+.flex-pai div{
+    background-color: white;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}
+/*Elementos em coluna*/
+.flex-super{
+    margin-top: 2%;
+    width: 25%;
+    display: flex;
+    /*Junto com Media Queries permite responsividade da tela para diferentes dispositivos*/
+    flex-direction: column;
+    background-color: yellowgreen;
+}
+.flex-super div{
+    background-color: blanchedalmond;
+    margin: 5px;
+    padding: 5px;
+}

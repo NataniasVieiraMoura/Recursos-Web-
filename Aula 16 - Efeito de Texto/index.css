@@ -1,0 +1,76 @@
+.container-pai{
+    display: inline-block
+}
+.box-pai{
+    margin-left: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container-box{
+    background-color: blueviolet;
+    background-image: url('img/OIP.jpg');
+    background-size: 100% 200px;
+    background-repeat:no-repeat;
+    width: 8%;
+    text-align: center;
+    height: 450px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.container-box:hover{
+    transition: 0.2s ease-out;
+    box-shadow: 10px 10px 30px black;
+    scale: 1.1;
+}
+.container-box h3{
+    margin-top: 90%;
+}
+.text-reduzido{
+    /*Essa propiedade controla a quebra de linha automática, nesse caso com valor para não-quebra automática*/
+    /*overflow determina até onde vai o fluxo do elemento, ou seja, se ele vai ser cortado, se vai ser visivel ou não, e se vai ser colocado barras de rolagem para visualização desse elemento.*/
+    /*Para o conteúdo do texto ajustar-se automaticamente ao tamanho do card usa-se a propiedade text-overflow*/
+    white-space: nowrap;
+    overflow: hidden;
+    /*ele delimita o    elemento para ficar do tamanho que a caixa permite*/
+    text-overflow: ellipsis;
+}
+
+/*caixa 2*/
+.container-box-2 {
+    background-color: blueviolet;
+    background-image: url('img/OIP.jpg');
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    width: 8%;
+    min-height: 450px;
+    text-align: center;
+    border-radius: 16px;
+    transition: transform 0.2s ease-out;
+}
+.container-box-2 h3{
+    margin-top: 90%;
+}
+.text-2{
+     /*Essa propiedade controla a quebra de linha automática, nesse caso com valor para não-quebra automática*/
+    /*overflow determina até onde vai o fluxo do elemento, ou seja, se ele vai ser cortado, se vai ser visivel ou não, e se vai ser colocado barras de rolagem para visualização desse elemento.*/
+    /*Para o conteúdo do texto ajustar-se automaticamente ao tamanho do card usa-se a propiedade text-overflow*/
+    white-space: nowrap;
+    overflow: hidden;
+    /*ele delimita o elemento para ficar do tamanho que a caixa permite*/
+    text-overflow: ellipsis;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.container-box-2:hover .text-2{
+    /*estende a transição para o card e o texto do card*/
+    height: auto;
+    /**/
+    white-space: normal;
+}
+.container-box-2:hover{
+    transition: 0.2s ease-out;
+    box-shadow: 10px 10px 30px black;
+    scale: 1.1;
+}

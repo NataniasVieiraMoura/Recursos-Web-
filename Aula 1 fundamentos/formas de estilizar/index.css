@@ -1,0 +1,56 @@
+/*asterisco estiliza todas as tags que não foram estilizadas*/
+/*
+
+*{
+    background-color: chocolate;}
+h1,h2,h3{
+    background-color:aquamarine;
+}
+
+*/
+h4{
+    color:rgb(128, 14, 128);
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 90px;
+}
+h5{
+    color:azure;
+    background-color: chocolate;
+    margin-bottom:20px;
+}
+h6{
+    color: black;
+    background-color:wheat;
+}
+h5:hover,h6:hover{
+    font-size: larger;
+
+}
+/*Para estilizar uma classe digite . seguido do nome da classe*/
+.boca{
+    background-color: rgb(127, 255, 212);
+    color: rgba(75, 19, 19, 0.797);/*red,gree,blue,tranparencia*/
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif;
+}
+/*hover é estilo após evento de passagem do mouse sobre a classe*/
+.boca:hover{
+    text-align: center;
+    background-color: rgb(0, 255, 212);
+    font-family: fantasy;
+    color: rgb(255, 255, 255);
+}
+/*Para estilizar id utilize # seguido do nome do id*/
+#poste{
+    text-align: left;
+    background-color: rgb(145, 100, 100);
+    color: rgb(241, 76, 76);
+    font-size: smaller;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#poste:hover{
+    text-align: right;
+    background-color: black;
+    color: blueviolet;
+}

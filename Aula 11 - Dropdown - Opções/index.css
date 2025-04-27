@@ -1,0 +1,69 @@
+ul.nav-options{
+    background-color: black;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.nav-options li{
+    /*Remove os estilos da lista antes de aplicar o float nas tags*/
+    list-style-type: none;
+    float: left;
+    padding: 0%;
+    margin: 0%;
+}
+/*Estrutura dropdown -> abre uma caixa de opções num elemento com uma numa opção da barra de navegação.*/
+.nav-options li a, .nav-options.drop-btn{
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration:none;
+}
+/*.dropdown:hover a.drop-bnt esse código diz que ao
+ao passar o mouse sobre o link a.drop-bnt, o estilo do dropdown permanecerá ativo*/
+.nav-options li a:hover, .dropdown:hover a.drop-bnt{
+    background-color: rgb(126, 126, 126);
+
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content{
+    /*Aqui a div é removida da exibição*/
+    display: none;
+    /*determina que a div fica posicionada em relação ao li.dropdown, ou seja, em relação a tag imediatamente superior a ele*/
+    position: absolute;
+    background-color: white;
+    /*largura da div*/
+    width: 150px;
+     
+}
+
+div.dropdown-content a{
+    color: black;
+    display: block;
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid gray ;
+}
+
+/*Aqui, quando o mouse passar sobre a tag contatos o a barra de opções aparece porque o display se torna block*/
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

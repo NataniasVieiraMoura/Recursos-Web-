@@ -1,0 +1,88 @@
+*{
+    border: 1px solid rgb(113, 0, 0);
+    margin: 0.5%;
+}
+.header{
+    background-color: rgb(34, 209, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 200px;
+    color: white;
+}
+
+nav ul.nav-links{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 0; 
+}
+
+nav ul.nav-links li{
+    justify-content: space-around;
+    padding: 14px 20px;
+}
+nav ul.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+.nav-bar li:hover{
+    transition: 0.3s ease-out;
+    background-color: gray;
+    scale: 1.1;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.corpo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card{
+    flex-grow: 1;
+    height: 400px;
+    background-color: gray;
+    margin: 0.5%;
+}
+@media screen and (max-width: 1000px){
+    .nav-links{
+        flex-direction: column;
+    }
+}
+.barra{
+    width: all;
+    height: 50px;
+    background-color: rgb(71, 71, 71);
+}
+
+.container-ceu{
+    background-color: antiquewhite;
+    height: 500px;
+}
+.container-ceu div{
+    display: inline-block;
+    padding: 100px 100px;
+}
+.a{
+    float: right;
+    background-color: blue;
+}
+.b{
+    background-color: red;
+}
+.c{
+    color: white;
+    background-color: black;
+}
+.d{
+    background-color: blueviolet;
+}
+.texto{
+    clear: both;
+    padding: 5px 5px;
+    height: 100px;
+    width: 300px;
+}

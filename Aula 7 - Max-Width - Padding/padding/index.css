@@ -1,0 +1,40 @@
+*{
+    border: 2px solid black;
+    padding: 0.1%;
+}
+.container{
+    /*a posição relativa ao conteiner body*/
+    position: relative;
+    /*disposição na linha e em bloco*/
+    display: inline-block;
+    /*imagem ocupando todo o container*/
+    background-size: cover;
+    width: 60%; 
+    height: 500px;
+    /*hierarquia de sobreposição*/
+    z-index:1;
+    border: 2px dashed red;
+    
+}
+img{
+    /*espaço que a imagem vai ocupar*/
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border: 2px solid green;
+}
+.centro{
+    /*essa propiedade fica orientada pelo container pai "container"*/
+    position: absolute;
+    /*distância do topo do container pai*/
+    top: 45%;
+    /*distância da esquerda do container pai*/
+    left: 40%;
+    /*padding adaptado ao conteúdo*/
+    width: auto;
+    /*centralização do texto*/
+    text-align: center;
+    z-index: 2;
+    border: 1px solid black;
+
+}

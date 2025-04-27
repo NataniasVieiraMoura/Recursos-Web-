@@ -1,0 +1,97 @@
+body{
+    background-image: linear-gradient(to right rgb(147, 239, 148));
+}
+h1{
+    padding: 0.5%;
+    color: rgb(88, 56, 0);
+    text-shadow: 0px 0px 10px white;
+    background-image: linear-gradient(to right ,rgb(255, 254, 218),rgba(46, 109, 47, 0.858),rgb(253, 255, 207));
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+/*Mídia Queries:*/
+/*Responsividade: sua página precisa ficar disponível para se comportar adequadamente independente do tamanho da tela(interface) que será exibido*/
+
+/* Smartphones de 600px ou inferior*/
+/*Veja a semelhança com as codições if*/
+@media only screen and (max-width: 600px){
+    /*Essa condição é ativada se o tamanho da tela for inferior a 600px
+    tela < 600px
+    */
+    body{
+        background-color: blue;
+    }
+    .container-gen{
+        width: 200px;
+        height: 200px;
+        background-image: radial-gradient(rgb(255, 255, 255) 30%,rgb(255, 0, 0) 1%,rgb(0, 255, 4) 40%);
+        border-radius: 4px;
+
+    }
+}
+/* Dispositivos um pouco maiores, mais ainda pequenos*/
+/*Pode mudar a disposição dos containers e dos elementos dependendo do tamanho*/
+@media only screen and (min-width: 600px){
+    /*Essa condição é ativada se a tela tiver o tamanho maior que 600px
+    tela > 600px
+    */
+    body{
+        background-color: gray;
+    }
+    .container-gen{
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(to left,rgb(255, 255, 255) ,rgb(255, 0, 0) ,rgb(0, 255, 4) );
+        border-radius: 16px;
+
+    }
+    
+
+}
+/* Dispositivos médios como tablets deitados*/
+@media only screen and (min-width: 768px){
+    /*Essa condição é ativada se a tela tiver o tamanho maior ou igual a 768px
+    tela >= 768px */
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+    .container-gen{
+        width: 400px;
+        height: 2000px;
+        background-image: linear-gradient(to top,rgb(255, 255, 255) ,rgb(0, 0, 255) ,rgb(255, 238, 0) );
+        border-radius: 500px;
+
+    }
+
+}
+/* Dispositivos largos como laptops, notebooks,*/
+@media only screen and (min-width: 992px){
+    /*Essa condição é ativada se a tela tiver o tamanho menor que 992px
+    tela >= 992px*/
+    body{
+        background-color: yellow;
+    }
+    .container-gen{
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(to top,rgb(255, 255, 255) ,rgb(0, 0, 255) ,rgb(255, 238, 0) );
+        border-top-left-radius: 500px;
+
+    }
+}
+/* Super largos como telas maiores que notebooks*/
+@media only screen and (min-width: 1200px){
+    /*Essa condição é ativada quando o tamanho da tela é maior ou igual a 1200px
+    tela >= 1200px*/
+    body{
+        background-color: blueviolet;
+    }
+    .container-gen{
+        width: 100px;
+        height: 300px;
+        background-image: linear-gradient(to top,rgb(255, 255, 255) ,rgb(0, 0, 255) ,rgb(255, 238, 0) );
+        border-bottom-right-radius: 200px;
+        
+
+    }
+}
